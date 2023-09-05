@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bugfish-jquery-sortselect - Bugfish Documentation</title> <!------------------------------------>
+    <meta name="description" content="Welcome to the Github Documentation Page of the Bugfish bugfish-jquery-sortselect jquery Plugin! Here you can fing the github url to the project and different explanation about the classes and functions! We wish you the best!"> <!------------------------------------>
+    <meta name="author" content="Bugfish">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="canonical" href="https://bugfishtm.github.io/bugfish-jquery-sortselect/index.html" />
+	<meta property="og:title" content="bugfish-jquery-sortselect - Bugfish Documentation" />
+	<meta property="og:url" content="https://bugfishtm.github.io/bugfish-jquery-sortselect/index.html" />
+	<meta property="og:image" content="./meta.jpg" />   
+	<link rel="stylesheet" href="./stylesheet.css">
+	 <script src="./jquery.js"></script> 
+	 <script src="./datatable.js"></script> 
+	 <script>
+		function internal_show(newshowvar, thiselement) {
+			$(".internal_show").hide();
+			$(".test").hide();
+			$("#"+newshowvar).show();
+			$(".navitts").css('color', '');
+			thiselement.css('color', '#ff0c02');
+		}
+		
+		
+		$( document ).ready(function() {
+			$(".internal_show").hide();
+			$("#show_php").show();
+			$(".startactivenav").css('color', '#ff0c02');
+		});		
+	 </script>
+  </head>
+  <body>
+<img src="logo.png" style="width: 100%; margin-bottom: -7px;">
+    <header id="header">
+	  
+      <h1>bugfish-jquery-sortselect</h1>Documentation and Informations!
+      
+      <ul class="main-menu">
+        <li><a href="https://bugfishtm.github.io/index.html" >Back</a></li>
+        <li><a href="#" class="navon">bugfish_sortselect</a></li>
+        <li><a href="https://github.com/bugfishtm/bugfish-jquery-sortselect" target="_blank">Github</a></li> 
+        <li><a href="https://bugfish.eu" target="_blank" rel="noopener">Bugfish</a></li>
+        <li><a href="./impressum.html">Impressum</a></li>
+        <li><a href="./privacy.html">Privacy</a></li>
+      </ul>   <hr>     
+      <ul class="main-menu submm">
+        <li><a href="#" class="startactivenav navitts" onclick="internal_show('show_php', $(this))">Informations</a></li>
+        <li><a href="#" class="navitts" onclick="internal_show('show_de', $(this))">Demo</a></li> 
+        <li><a href="#" class="navitts" onclick="internal_show('show_ccc', $(this))">Changelog</a></li> 
+        <li><a href="#" class="navitts" onclick="internal_show('show_lic', $(this))">Licenses</a></li> 
+      </ul>               
+    </header>
+    <a href="#header"><div class="gobacktotop"><b>^ Back to Top</b></div></a> 
+	
+
+</div>
+
+<div class="internal_show" id="show_de">
+ <div class="inner inner_section">
+ 
+     <script src="./jq.3.6.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+     <script src="./jquery.multiselect.sortable.js"></script>
+    <link rel="stylesheet" href="./jquery.multiselect.sortable.js.css">
+     <script>
+        jQuery(function($){
+            $('.multiselectsortable_1').bugfish_sortselect({
+				selectable:{
+					title:'Disabled'
+				},
+				selection :{
+					title:'Selected'
+				},
+				rid: 31
+            });
+            
+            $('.submit_btn').on('click',function(){
+                var a = $('.bugfish_1').val()
+                console.log(a)
+                return false;
+            })
+            
+        })
+		
+        jQuery(function($){
+            $('.multiselectsortable_2').bugfish_sortselect({
+                selectable:{
+					title:'Disabled'
+				},
+				selection :{
+					title:'Selected'
+				},
+				rid: 32
+            });
+            
+            $('.submit_btn').on('click',function(){
+                var a = $('.bugfish_2').val()
+                console.log(a)
+                return false;
+            })
+            
+        })
+    </script>
+	
+		<form action="" method="post">
+		<select name="multiselectsortable_1" class="multiselectsortable_1 bugfish_1" multiple>
+			<option value="7" selected data-deneme="deneme" disabled>Entry 7</option>
+			<option value="6" selected disabled>Entry 6</option>
+			<option value="5" disabled>Entry 5</option>
+			<option value="4" selected>Entry 4</option>
+			<option value="3" selected>Entry 3</option>
+			<option value="2" selected>Entry 2</option>
+			<option value="1" selected>Entry 1</option>
+		</select>
+		<input type="submit" class="submit_btn btn" value="Check the Browser Console after Submit to see result!">
+	</form>
+
+	<form action="" method="post">
+		<select name="multiselectsortable_2" class="multiselectsortable_2 bugfish_2" multiple>
+			<option value="13" selected data-deneme="deneme" disabled>Entry 13</option>
+			<option value="14" selected disabled>Entry 14</option>
+			<option value="12" disabled>Entry 12</option>
+			<option value="11" selected>Entry 11</option>
+			<option value="10" selected>Entry 10</option>
+			<option value="9" selected>Entry 9</option>
+			<option value="8" selected>Entry 8</option>
+		</select>
+		<input type="submit" class="submit_btn btn" value="Check the Browser Console after Submit to see result!">
+	</form>
+ </div>
+ </div>
+
+
+<div class="internal_show" id="show_ccc">
+ <div class="inner inner_section">
+<h2>Changelog</h2>
+			  
+	    <table>
+			<tr>
+				<th>Date</th>
+				<th>Version</th>
+				<th>Description</th>
+			</tr>
+				<tr>
+					<td>22.08.2023</td>
+					<td>1.0</b></td>
+					<td>Initial Commit</td>
+				</tr>
+		</table>
+</div>
+</div>
+				<!------------------------------------>
+				
+			<div class="internal_show" id="show_php">
+			  <div class="inner inner_section"><h2>General Information</h2> You can use the results without javascript and directly in the form. It is not forcing you to handle the form with javascript. <br /><br />
+			  
+<!-- Summary -->
+<p>The <strong>"multiselect-sortable"</strong> jQuery plugin enhances the functionality of multiple select elements by allowing you to easily sort and manage selected options in a dual list box. This revised version of the plugin now includes a <strong>"rid" (Resource Identifier)</strong> parameter, which helps in distinguishing between different instances of the script when used on the same webpage. Failure to provide a unique "rid" value for each instance can result in errors or unexpected behavior.</p>
+
+<!-- How to Use It -->
+<ol>
+  <li><strong>Load the necessary jQuery libraries:</strong></li>
+
+    &lt;script src="/path/to/cdn/jquery.min.js"&gt;&lt;/script&gt;<br />
+    &lt;script src="/path/to/cdn/jquery-ui.min.js"&gt;&lt;/script&gt;<br /><br />
+
+
+  <li><strong>Load the multiselect-sortable plugin's JavaScript and CSS files:</strong></li>
+
+    &lt;script src="assets/js/jquery.multiselect.sortable.js"&gt;&lt;/script&gt;<br />
+    &lt;link rel="stylesheet" href="assets/css/jquery.multiselect.sortable.js.css" /&gt;<br /><br />
+
+
+  <li><strong>Add the "multiselectsortable" class to your multiple select element and define pre-selected options using the "selected" attribute. Ensure you provide a unique "rid" value for each instance:</strong></li>
+
+   &nbsp;&nbsp; &lt;!-- Example 1 --&gt;<br />
+   &nbsp;&nbsp; &lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-1" multiple data-rid="instance-1"&gt;<br />
+   &nbsp;&nbsp;   &lt;!-- Options here... --&gt;<br />
+   &nbsp;&nbsp;&lt;/select&gt;<br />
+<br /><br />
+   &nbsp; &lt;!-- Example 2 --&gt;<br />
+   &nbsp;&nbsp; &lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-2" multiple data-rid="instance-2"&gt;<br />
+   &nbsp;&nbsp;   &lt;!-- Options here... --&gt;<br />
+  &nbsp; &nbsp; &lt;/select&gt;<br />
+<br /><br />
+    &nbsp;&lt;!-- Example 3 --&gt;<br />
+    &nbsp;&nbsp;&lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-3" multiple data-rid="instance-3"&gt;<br />
+    &nbsp;&nbsp;  &lt;!-- Options here... --&gt;<br />
+    &nbsp;&lt;/select&gt;<br /><br />
+
+
+  <li><strong>Call the function on the select element to activate the plugin, ensuring you pass the "rid" parameter for each instance:</strong></li>
+<br />
+    &nbsp;jQuery(function($){<br />
+    &nbsp;&nbsp;  // Example 1<br />
+     &nbsp;&nbsp; $('.multiselectsortable-1').multiselect_sortable({<br />
+     &nbsp;&nbsp;&nbsp;   rid: 'instance-1'<br />
+     &nbsp;&nbsp; });<br />
+    &nbsp;});<br />
+<br /><br />
+    &nbsp;jQuery(function($){<br />
+    &nbsp;&nbsp;  // Example 2<br />
+     &nbsp;&nbsp; $('.multiselectsortable-2').multiselect_sortable({<br />
+     &nbsp;&nbsp;&nbsp;   rid: 'instance-2'<br />
+     &nbsp;&nbsp; });<br />
+    &nbsp;});<br />
+<br /><br />
+    jQuery(function($){<br />
+     &nbsp; // Example 3<br />
+     &nbsp; $('.multiselectsortable-3').multiselect_sortable({<br />
+     &nbsp;&nbsp;   rid: 'instance-3'<br />
+     &nbsp;});<br />
+    });<br />
+<br /><br />
+</ol>
+
+			
+			
+			  </div> 			
+			</div> 
+		  </div>
+
+
+		  
+		   <div class="internal_show inner" id="show_lic">
+				<h2>bugfish-jquery-sortselect</h2>
+MIT License<br />
+<br />
+Copyright (c) 2023 All contributors to Bugfish
+<br /><br />
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+<br /><br />
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+<br /><br />
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+		   </div>
+  </body>
+</html>
