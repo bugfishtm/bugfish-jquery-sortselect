@@ -1,70 +1,144 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- META RELATED -->
     <meta charset="utf-8">
-    <title>bugfish-jquery-sortselect - Bugfish Documentation</title> <!------------------------------------>
-    <meta name="description" content="Welcome to the Github Documentation Page of the Bugfish bugfish-jquery-sortselect jquery Plugin! Here you can fing the github url to the project and different explanation about the classes and functions! We wish you the best!"> <!------------------------------------>
-    <meta name="author" content="Bugfish">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="canonical" href="https://bugfishtm.github.io/bugfish-jquery-sortselect/index.html" />
-	<meta property="og:title" content="bugfish-jquery-sortselect - Bugfish Documentation" />
-	<meta property="og:url" content="https://bugfishtm.github.io/bugfish-jquery-sortselect/index.html" />
-	<meta property="og:image" content="./meta.jpg" />   
-	<link rel="stylesheet" href="./stylesheet.css">
-	 <script src="./jquery.js"></script> 
-	 <script src="./datatable.js"></script> 
-	 <script>
-		function internal_show(newshowvar, thiselement) {
-			$(".internal_show").hide();
-			$(".test").hide();
-			$("#"+newshowvar).show();
-			$(".navitts").css('color', '');
-			thiselement.css('color', '#ff0c02');
-		}
-		
-		
-		$( document ).ready(function() {
-			$(".internal_show").hide();
-			$("#show_php").show();
-			$(".startactivenav").css('color', '#ff0c02');
-		});		
-	 </script>
-  </head>
-  <body>
-<img src="logo.png" style="width: 100%; margin-bottom: -7px;">
-    <header id="header">
-	  
-      <h1>bugfish-jquery-sortselect</h1>Documentation and Informations!
-      
-      <ul class="main-menu">
-        <li><a href="https://bugfishtm.github.io/index.html" >Back</a></li>
-        <li><a href="#" class="navon">bugfish_sortselect</a></li>
-        <li><a href="https://github.com/bugfishtm/bugfish-jquery-sortselect" target="_blank">Github</a></li> 
-        <li><a href="https://bugfish.eu" target="_blank" rel="noopener">Bugfish</a></li>
-        <li><a href="./impressum.html">Impressum</a></li>
-        <li><a href="./privacy.html">Privacy</a></li>
-      </ul>   <hr>     
-      <ul class="main-menu submm">
-        <li><a href="#" class="startactivenav navitts" onclick="internal_show('show_php', $(this))">Informations</a></li>
-        <li><a href="#" class="navitts" onclick="internal_show('show_de', $(this))">Demo</a></li> 
-        <li><a href="#" class="navitts" onclick="internal_show('show_ccc', $(this))">Changelog</a></li> 
-        <li><a href="#" class="navitts" onclick="internal_show('show_lic', $(this))">Licenses</a></li> 
-      </ul>               
-    </header>
-    <a href="#header"><div class="gobacktotop"><b>^ Back to Top</b></div></a> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+	<meta property="og:image" content="https://bugfishtm.github.io/assets/meta.png" />
+	<meta name="subject" content="documentation">
+	<meta name="copyright" content="bugfish">
+	<meta name='language' content='en'>
+	<meta name='robots' content='index,follow'>
+	<meta name='author' content='bugfish, ynvnzmlzaa@gmail.com'>
+	<!-- LINK RELATED -->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>    
+	<link rel="stylesheet" href="assets/css/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">	
+	<link id="theme-style" rel="stylesheet" href="assets/css/stylesheet.css">
+    <script src="assets/js/jq.3.6.min.js"></script>	
+    <script src="assets/js/jquery.highlight.js"></script>
+    <script src="assets/js/jquery.scrollto.js"></script>
+    <script src="assets/js/jquery.finder.js"></script>
+	<!-- Descriptions -->
+    <title>jQuery Sortselect - BugfishDocs</title>
+	<meta property="og:title" content="jQuery Sortselect - BugfishDocs"/>
+	<meta name="description" content="Welcome to the Github Documentation Page of the Bugfish bugfish-jquery-sortselect jquery Plugin! Here you can fing the github url to the project and different explanation about the classes and functions! We wish you the best!">
+</head> 
+<body class="docs-page" data-finder-wrapper>    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="https://bugfishtm.github.io"><img class="logo-icon me-2" src="assets/logo.png" alt="logo" width="25"><span class="logo-text">Bugfish<span class="text-alt">Docs</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
 	
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    <div class="docs-wrapper" >
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>jQuery Sortselect</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Informations</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Demonstration</a></li>
+					<!-- Various Informations -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-hashtag"></i></span>Various</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1" target="_blank">How to get support?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2" target="_blank">License</a></li>
+					<!-- Impressum and Bugfish Link -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link"><span class="theme-icon-holder me-2"><i class="fas fa-link"></i></span>Links</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://www.bugfish.eu" target="_blank">My Website</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://bugfishtm.github.io" target="_blank">Documentations</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://bugfishtm.blogspot.com/2023/05/impressum.html" target="_blank">Impressum</a></li>
+				    <li class="nav-item"><a class="nav-link" href="https://bugfishtm.blogspot.com/2023/05/privacy.html" target="_blank">Privacy</a></li>
+			    </ul>
 
-</div>
-
-<div class="internal_show" id="show_de">
- <div class="inner inner_section">
- 
-     <script src="./jq.3.6.min.js"></script>
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content" data-finder-content>
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">jQuery Sortselect <span class="docs-time">Documentations</span></h1>
+					    <section class="docs-intro">
+						    <p>This is the Documentation for the Android Web App Source Code Template!</p>
+						<a href="https://github.com/bugfishtm/Android-Web-App-Example/archive/refs/heads/main.zip" class="btn btn-primary"  target="_blank"><i class="fas fa-download me-2"></i> Download</a>
+						<a href="https://github.com/bugfishtm/Android-Web-App-Example" class="btn btn-info" target="_blank"><i class="fas fa-link me-2" ></i> Github</a>
+						</section><!--//docs-intro-->
+				    </header>
+				    <section class="docs-section" id="item-1-1">
+					<h2 class="section-heading">Informations</h2>
+<p>The <strong style="color: white;">"multiselect-sortable"</strong> jQuery plugin enhances the functionality of multiple select elements by allowing you to easily sort and manage selected options in a dual list box. This revised version of the plugin now includes a <strong style="color: white;">"rid" (Resource Identifier)</strong> parameter, which helps in distinguishing between different instances of the script when used on the same webpage. Failure to provide a unique "rid" value for each instance can result in errors or unexpected behavior.</p>
     <script src="./jquery-ui.min.js"></script>
      <script src="./jquery.multiselect.sortable.js"></script>
-    <link rel="stylesheet" href="./jquery.multiselect.sortable.js.css">
+    <link rel="stylesheet" href="./jquery.multiselect.sortable.js.css">					
+<ol>
+  <li><strong style="color: white;">Load the necessary jQuery libraries:</strong></li>
+
+    <code class="json hljs">&lt;script src="/path/to/cdn/jquery.min.js"&gt;&lt;/script&gt;<br />
+    &lt;script src="/path/to/cdn/jquery-ui.min.js"&gt;&lt;/script&gt;<br /><br /></code>
+
+
+  <li><strong style="color: white;">Load the multiselect-sortable plugin's JavaScript and CSS files:</strong></li>
+<code class="json hljs">
+    &lt;script src="assets/js/jquery.multiselect.sortable.js"&gt;&lt;/script&gt;<br />
+    &lt;link rel="stylesheet" href="assets/css/jquery.multiselect.sortable.js.css" /&gt;<br /><br />
+</code>
+
+  <li><strong style="color: white;">Add the "multiselectsortable" class to your multiple select element and define pre-selected options using the "selected" attribute. Ensure you provide a unique "rid" value for each instance:</strong></li>
+<code class="json hljs">
+   &nbsp;&nbsp; &lt;!-- Example 1 --&gt;<br />
+   &nbsp;&nbsp; &lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-1" multiple data-rid="instance-1"&gt;<br />
+   &nbsp;&nbsp;   &lt;!-- Options here... --&gt;<br />
+   &nbsp;&nbsp;&lt;/select&gt;<br />
+<br /><br />
+   &nbsp; &lt;!-- Example 2 --&gt;<br />
+   &nbsp;&nbsp; &lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-2" multiple data-rid="instance-2"&gt;<br />
+   &nbsp;&nbsp;   &lt;!-- Options here... --&gt;<br />
+  &nbsp; &nbsp; &lt;/select&gt;<br />
+<br /><br />
+    &nbsp;&lt;!-- Example 3 --&gt;<br />
+    &nbsp;&nbsp;&lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-3" multiple data-rid="instance-3"&gt;<br />
+    &nbsp;&nbsp;  &lt;!-- Options here... --&gt;<br />
+    &nbsp;&lt;/select&gt;<br /><br /></code>
+
+
+  <li><strong style="color: white;">Call the function on the select element to activate the plugin, ensuring you pass the "rid" parameter for each instance:</strong></li><code class="json hljs">
+<br />
+    &nbsp;jQuery(function($){<br />
+    &nbsp;&nbsp;  // Example 1<br />
+     &nbsp;&nbsp; $('.multiselectsortable-1').bugfish_sortselect({<br />
+     &nbsp;&nbsp;&nbsp;   rid: 'instance-1'<br />
+     &nbsp;&nbsp; });<br />
+    &nbsp;});<br />
+<br /><br />
+    &nbsp;jQuery(function($){<br />
+    &nbsp;&nbsp;  // Example 2<br />
+     &nbsp;&nbsp; $('.multiselectsortable-2').bugfish_sortselect({<br />
+     &nbsp;&nbsp;&nbsp;   rid: 'instance-2'<br />
+     &nbsp;&nbsp; });<br />
+    &nbsp;});<br />
+<br /><br />
+    jQuery(function($){<br />
+     &nbsp; // Example 3<br />
+     &nbsp; $('.multiselectsortable-3').bugfish_sortselect({<br />
+     &nbsp;&nbsp;   rid: 'instance-3'<br />
+     &nbsp;});<br />
+    });<br />
+<br /><br /></code>
+</ol>
+				   </section> <section class="docs-section" id="item-1-2"><h2 class="section-heading">Demonstration</h2>
      <script>
         jQuery(function($){
             $('.multiselectsortable_1').bugfish_sortselect({
@@ -115,10 +189,9 @@
 			<option value="2" selected>Entry 2</option>
 			<option value="1" selected>Entry 1</option>
 		</select>
-		<input type="submit" class="submit_btn btn" value="Check the Browser Console after Submit to see result!">
-	</form>
+		<input type="submit" class="submit_btn btn btn-info" value="Submit Form"><br />
+		Check the Browsers Console after Submitting to see submitted values!
 
-	<form action="" method="post">
 		<select name="multiselectsortable_2" class="multiselectsortable_2 bugfish_2" multiple>
 			<option value="13" selected data-deneme="deneme" disabled>Entry 13</option>
 			<option value="14" selected disabled>Entry 14</option>
@@ -127,128 +200,52 @@
 			<option value="10" selected>Entry 10</option>
 			<option value="9" selected>Entry 9</option>
 			<option value="8" selected>Entry 8</option>
-		</select>
-		<input type="submit" class="submit_btn btn" value="Check the Browser Console after Submit to see result!">
-	</form>
- </div>
- </div>
+		</select><br clear="left">
+	</form> <br clear="left">
 
+					</section><!--//section-->					
+			    </article>
+			    <article class="docs-article" id="section-9" style="padding-top: 0px;">
+					<header class="docs-header">
+					    <h2 class="docs-heading">Various</h2>
+					    <section class="docs-intro">
+						    <p>Here you can see various pages with licensing and support informations!</p>
+						</section><!--//docs-intro-->
+				    </header>
+					<section class="docs-section" id="item-9-1" style="padding-top: 0px;">
+						<h2 class="section-heading">How to get support?</h2>
+						<p>There are different ways to get support for our products. You can write comments in our specific websites section for the related product, but the best way it to write in our forum, as we are getting notifications about that! So if you need any help, sign in at our forum and we will do what we can to serve you. If you do not want to register at our forum, you are invited to write us for support at requests@bugfish.eu.</p>
+						<a href="https://www.bugfish.eu" class="btn btn-primary" target="_blank"><i class="fas fa-link me-2"></i> My Website</a>
+						<a href="https://forum.bugfish.eu/" class="btn btn-warning" target="_blank"><i class="fas fa-bug me-2"></i> My Forum</a>
+					</section><!--//section-->	
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">License Informations</h2>
+						<h4>License Informations of this Software Code</h4>
+		Copyright 2022 www.bugfish.eu Jan-Maurice Dahlmanns (Bugfish)<br />
+		This Product is running with MIT LICENSE<br /><br />
 
-<div class="internal_show" id="show_ccc">
- <div class="inner inner_section">
-<h2>Changelog</h2>
-			  
-	    <table>
-			<tr>
-				<th>Date</th>
-				<th>Version</th>
-				<th>Description</th>
-			</tr>
-				<tr>
-					<td>22.08.2023</td>
-					<td>1.0</b></td>
-					<td>Initial Commit</td>
-				</tr>
-		</table>
-</div>
-</div>
-				<!------------------------------------>
-				
-			<div class="internal_show" id="show_php">
-			  <div class="inner inner_section"><h2>General Information</h2> You can use the results without javascript and directly in the form. It is not forcing you to handle the form with javascript. <br /><br />
-			  
-<!-- Summary -->
-<p>The <strong>"multiselect-sortable"</strong> jQuery plugin enhances the functionality of multiple select elements by allowing you to easily sort and manage selected options in a dual list box. This revised version of the plugin now includes a <strong>"rid" (Resource Identifier)</strong> parameter, which helps in distinguishing between different instances of the script when used on the same webpage. Failure to provide a unique "rid" value for each instance can result in errors or unexpected behavior.</p>
+		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
 
-<!-- How to Use It -->
-<ol>
-  <li><strong>Load the necessary jQuery libraries:</strong></li>
+		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
 
-    &lt;script src="/path/to/cdn/jquery.min.js"&gt;&lt;/script&gt;<br />
-    &lt;script src="/path/to/cdn/jquery-ui.min.js"&gt;&lt;/script&gt;<br /><br />
-
-
-  <li><strong>Load the multiselect-sortable plugin's JavaScript and CSS files:</strong></li>
-
-    &lt;script src="assets/js/jquery.multiselect.sortable.js"&gt;&lt;/script&gt;<br />
-    &lt;link rel="stylesheet" href="assets/css/jquery.multiselect.sortable.js.css" /&gt;<br /><br />
-
-
-  <li><strong>Add the "multiselectsortable" class to your multiple select element and define pre-selected options using the "selected" attribute. Ensure you provide a unique "rid" value for each instance:</strong></li>
-
-   &nbsp;&nbsp; &lt;!-- Example 1 --&gt;<br />
-   &nbsp;&nbsp; &lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-1" multiple data-rid="instance-1"&gt;<br />
-   &nbsp;&nbsp;   &lt;!-- Options here... --&gt;<br />
-   &nbsp;&nbsp;&lt;/select&gt;<br />
-<br /><br />
-   &nbsp; &lt;!-- Example 2 --&gt;<br />
-   &nbsp;&nbsp; &lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-2" multiple data-rid="instance-2"&gt;<br />
-   &nbsp;&nbsp;   &lt;!-- Options here... --&gt;<br />
-  &nbsp; &nbsp; &lt;/select&gt;<br />
-<br /><br />
-    &nbsp;&lt;!-- Example 3 --&gt;<br />
-    &nbsp;&nbsp;&lt;select name="multiselectsortable" class="multiselectsortable demo multiselectsortable-3" multiple data-rid="instance-3"&gt;<br />
-    &nbsp;&nbsp;  &lt;!-- Options here... --&gt;<br />
-    &nbsp;&lt;/select&gt;<br /><br />
-
-
-  <li><strong>Call the function on the select element to activate the plugin, ensuring you pass the "rid" parameter for each instance:</strong></li>
-<br />
-    &nbsp;jQuery(function($){<br />
-    &nbsp;&nbsp;  // Example 1<br />
-     &nbsp;&nbsp; $('.multiselectsortable-1').bugfish_sortselect({<br />
-     &nbsp;&nbsp;&nbsp;   rid: 'instance-1'<br />
-     &nbsp;&nbsp; });<br />
-    &nbsp;});<br />
-<br /><br />
-    &nbsp;jQuery(function($){<br />
-    &nbsp;&nbsp;  // Example 2<br />
-     &nbsp;&nbsp; $('.multiselectsortable-2').bugfish_sortselect({<br />
-     &nbsp;&nbsp;&nbsp;   rid: 'instance-2'<br />
-     &nbsp;&nbsp; });<br />
-    &nbsp;});<br />
-<br /><br />
-    jQuery(function($){<br />
-     &nbsp; // Example 3<br />
-     &nbsp; $('.multiselectsortable-3').bugfish_sortselect({<br />
-     &nbsp;&nbsp;   rid: 'instance-3'<br />
-     &nbsp;});<br />
-    });<br />
-<br /><br />
-</ol>
-
-			
-			
-			  </div> 			
-			</div> 
-		  </div>
-
-
-		  
-		   <div class="internal_show inner" id="show_lic">
-				<h2>bugfish-jquery-sortselect</h2>
-MIT License<br />
-<br />
-Copyright (c) 2023 All contributors to Bugfish
-<br /><br />
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-<br /><br />
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-<br /><br />
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-		   </div>
-  </body>
-</html>
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br /><br />
+						<h4>License Informations of this Github Page</h4>
+				       <p> <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank" rel="noopener">Xiaoying Riley</a> for developers <br/>(And modified by <a href="https://www.bugfish.eu" target="_blank" rel="noopener">bugfish</a>)<br />You are only allowed to use this template if you include this attribution!</small></p>					
+					</section><!--//section-->		
+			    </article><!--//docs-article-->
+			</div> <!--//docs-container--> 
+		</div><!--//docs-content-->   
+    </div><!--//docs-wrapper-->       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="assets/js/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+</body>
+</html> 
