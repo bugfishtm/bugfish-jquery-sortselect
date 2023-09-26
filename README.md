@@ -3,7 +3,13 @@
 ![License](https://img.shields.io/badge/License-MIT-black)
 ![Version](https://img.shields.io/badge/Version-1.0-white)
 # Bugfish Sortselect (jquery selectbox plugin)
+
+Repository:  https://github.com/bugfishtm/bugfish-jquery-sortselect   
+Documentation: https://bugfishtm.github.io/bugfish-jquery-sortselect/  
+The documentation is available in this repositories "docs" folder!
+
 The "multiselect-sortable" jQuery plugin enhances the functionality of multiple select elements by allowing you to easily sort and manage selected options in a dual list box. This revised version of the plugin now includes a "rid" (Resource Identifier) parameter, which helps in distinguishing between different instances of the script when used on the same webpage. Failure to provide a unique "rid" value for each instance can result in errors or unexpected behavior.
+
 
 Load the necessary jQuery libraries:
 
@@ -54,17 +60,6 @@ Call the function on the select element to activate the plugin, ensuring you pas
 
 
 
-## Documentations
-
-You can find the documentation at www.bugfish.eu, besides  that there is a documentation inside  
- the docs folder of this repository and at https://bugfishtm.github.io/bugfish-jquery-sortselect !  
-
-You can find the Documentation here:  
-https://bugfishtm.github.io/bugfish-jquery-sortselect/
-
-You can find the Github Page here:  
-https://github.com/bugfishtm/bugfish-jquery-sortselect
-
 
 ## Folder Description
 
@@ -74,10 +69,8 @@ https://github.com/bugfishtm/bugfish-jquery-sortselect
 |_source| The plugins source code + example file!|
 |docs|Files for the Github Repositories Pages and Documentations, view the Documentation by viewing the index.html file in your browser!|
 
-For more informations see inside repository folders!
-
 ## Issues
-If you encounter issues or have questions using this software, do not hesitate write us at our Forum on www.bugfish.eu/forum !
+If you encounter issues or have questions using this software, do not hesitate write us at our Forum on www.bugfish.eu/forum! Besides that you can write us at request@bugfish.eu if you have any issues!
 
 ## License
 For License Informations see License.md inside directories!
