@@ -61,8 +61,6 @@ Call the function on the select element to activate the plugin, ensuring you pas
 
 
 
-
-
 ## Folder Description
 
 |Folder|Description|
@@ -71,8 +69,14 @@ Call the function on the select element to activate the plugin, ensuring you pas
 |_source| The plugins source code + example file!|
 |docs|Files for the Github Repositories Pages and Documentations, view the Documentation by viewing the index.html file in your browser!|
 
-## Issues
-If you encounter issues or have questions using this software, do not hesitate write us at our Forum on www.bugfish.eu/forum! Besides that you can write us at request@bugfish.eu if you have any issues!
+## jQuery and jQuery-UI Included for Convenience
 
-## License
-For License Informations see License.md inside directories!
+In this repository, both jQuery and jQuery-UI are included to showcase the functionality of the repository's related jQuery plugin. We have included these libraries to make it easier for developers who use this product to implement it quickly. By providing jQuery and jQuery-UI JavaScript files, we aim to streamline the development process and ensure that developers have the necessary resources readily available to harness the full potential of this repository's features. This convenience is intended to simplify integration and help developers get up and running with the provided plugin more efficiently.
+
+## Support and Assistance
+
+If you encounter any issues or require assistance, please visit www.forum.bugfish.eu for additional resources. You can also contact us at request@bugfish.eu, and we will do our best to assist you.
+
+## License Information
+
+The license details for this Bugfish-jQuery-Sortselect project can be found in the "license.md" file within the project repository. Please review this file to understand the terms and conditions of use and distribution. It is essential to comply with the project's license to ensure legal and ethical usage of the provided resources.
