@@ -1,6 +1,6 @@
 ![Bugfish](https://img.shields.io/badge/Bugfish-jQuery-orange)
 ![Status](https://img.shields.io/badge/Status-Finished-green)
-![License](https://img.shields.io/badge/License-MIT-black)
+![License](https://img.shields.io/badge/License-GPLv3-black)
 ![Version](https://img.shields.io/badge/Version-1.0-white)
 # Bugfish Sortselect (jquery selectbox plugin)
 
@@ -79,4 +79,4 @@ If you encounter any issues or require assistance, please visit www.forum.bugfis
 
 ## License Information
 
-The license details for this Bugfish-jQuery-Sortselect project can be found in the "license.md" file within the project repository. Please review this file to understand the terms and conditions of use and distribution. It is essential to comply with the project's license to ensure legal and ethical usage of the provided resources.
+The license details for this Bugfish-jQuery-Sortselect project can be found in the "license.md" file within the project repository. Please review this file to understand the terms and conditions of use and distribution. It is essential to comply with the project's license to ensure legal and ethical usage of the provided resources. This project is a fork of "sortable-multi-select" released with MIT License with Name "Sortable Dual List Box In jQuery". No additional License Informations included in Root Repository. This project has been further enhanced and the license transformed into GPLv3.
