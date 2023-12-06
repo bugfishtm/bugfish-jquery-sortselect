@@ -11,7 +11,7 @@
 			\/                 \/     \/                \/       \/  	
 						www.bugfish.eu
 						
-	Bugfish Dashboard Modifications of Windmill Theme!
+	Bugfish jQuery Sortselect Plugin
 	Copyright (C) 2024 Jan Maurice Dahlmanns [Bugfish]
 
 	This program is free software: you can redistribute it and/or modify
