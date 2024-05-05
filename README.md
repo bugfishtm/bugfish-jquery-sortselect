@@ -75,7 +75,7 @@ In this repository, both jQuery and jQuery-UI are included to showcase the funct
 
 ## Support and Assistance
 
-If you encounter any issues or require assistance, please visit www.forum.bugfish.eu for additional resources. You can also contact us at request@bugfish.eu, and we will do our best to assist you.
+If you encounter any issues or require assistance, please visit www.bugfish.eu/forum for additional resources. You can also contact us at request@bugfish.eu, and we will do our best to assist you.
 
 ## License Information
 
