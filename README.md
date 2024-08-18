@@ -1,7 +1,3 @@
-![Bugfish](https://img.shields.io/badge/Bugfish-jQuery-orange)
-![Status](https://img.shields.io/badge/Status-Finished-green)
-![License](https://img.shields.io/badge/License-GPLv3-black)
-![Version](https://img.shields.io/badge/Version-1.0-white)
 # Bugfish Sortselect (jquery selectbox plugin)
 
 Repository:  https://github.com/bugfishtm/bugfish-jquery-sortselect   
