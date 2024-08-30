@@ -1,4 +1,6 @@
-## General Information
+# jQuery Sortselect
+
+## Introduction
 
 The **"multiselect-sortable"** jQuery plugin enhances multiple select elements by allowing easy sorting and management of selected options within a dual list box. This updated version includes a **"rid" (Resource Identifier)** parameter to distinguish between different instances of the script on the same webpage. Failing to provide a unique "rid" value for each instance can cause errors or unexpected behavior.
 
