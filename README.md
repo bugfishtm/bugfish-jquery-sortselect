@@ -1,13 +1,14 @@
 # Bugfish Sortselect (jquery selectbox plugin)
 
-Repository:  https://github.com/bugfishtm/bugfish-jquery-sortselect   
-Documentation: https://bugfishtm.github.io/bugfish-jquery-sortselect/  
-The documentation is available in this repositories "docs" folder!
+## Introduction
 
 The "multiselect-sortable" jQuery plugin enhances the functionality of multiple select elements by allowing you to easily sort and manage selected options in a dual list box. This revised version of the plugin now includes a "rid" (Resource Identifier) parameter, which helps in distinguishing between different instances of the script when used on the same webpage. Failure to provide a unique "rid" value for each instance can result in errors or unexpected behavior.
 
-Screenshot:  
+## Screenshot
+
 ![Demo Image](./docs/demo.png)
+
+## How to use
 
 Load the necessary jQuery libraries:
 
@@ -76,3 +77,5 @@ If you encounter any issues or require assistance, please visit www.bugfish.eu/f
 ## License Information
 
 The license details for this Bugfish-jQuery-Sortselect project can be found in the "license.md" file within the project repository. Please review this file to understand the terms and conditions of use and distribution. It is essential to comply with the project's license to ensure legal and ethical usage of the provided resources. This project is a fork of "sortable-multi-select" released with MIT License with Name "Sortable Dual List Box In jQuery". No additional License Informations included in Root Repository. This project has been further enhanced and the license transformed into GPLv3.
+
+🐟 Bugfish <3

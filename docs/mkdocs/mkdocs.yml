@@ -1,6 +1,6 @@
 site_name: jQuery Sortselect
 repo_url: https://github.com/bugfishtm/bugfish-jquery-sortselect
-repo_name: bugfishtm/bugfish-jquery-sortselect
+repo_name: bugfish-jquery-sortselect
 
 nav:
   - Introduction: index.md
@@ -23,13 +23,13 @@ theme:
   features:
     - content.code.copy
   palette:
-    - scheme: slate
+    - scheme: default
       primary: deep orange
       accent: deep orange
 
 extra_css:
-  - stylesheets/extra.css
   - stylesheets/jquery.multiselect.sortable.js.css
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/jq.3.6.min.js
@@ -42,13 +42,6 @@ plugins:
     - search
     - mkdocs-video
     - glightbox
-    - meta-descriptions:
-       export_csv: false
-       quiet: false
-       enable_checks: false
-       min_length: 50
-       max_length: 160
-       trim: false
     
 markdown_extensions:
   - attr_list
