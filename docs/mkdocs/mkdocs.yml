@@ -1,0 +1,61 @@
+site_name: Bugfish jQuery Sortselect
+repo_url: https://github.com/bugfishtm/bugfish-jquery-sortselect
+repo_name: bugfish-jquery-sortselect
+
+nav:
+    - Overview: index.md
+    - Download: download.md
+    - Contributing: contributing.md
+    - Warranty: warranty.md
+    - Support: support.md
+    - License: license.md
+    - Impressum: https://bugfishtm.blogspot.com/2023/05/impressum.html
+    - Privacy: https://bugfishtm.blogspot.com/2023/05/privacy.html
+
+theme:
+  name: material
+  logo: ./logo.png
+  favicon: ./favicon.ico
+  primary: deep orange
+  language: 'en'
+  accent: deep orange
+  font: false
+  features:
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+
+extra_css:
+  - jquery.multiselect.sortable.js.css
+  - extra.css
+
+extra_javascript:
+  - jq.3.6.min.js
+  - jquery-ui.min.js
+  - jquery.multiselect.sortable.js
+  - extra.js
+
+plugins:
+    - mkdocstrings
+    - search
+    - mkdocs-video
+    - glightbox
+    
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  
+use_directory_urls: false
+
+extra:
+  meta:
+    author: "Jan-Maurice Dahlmanns"
